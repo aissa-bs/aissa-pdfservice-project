@@ -1,0 +1,166 @@
+/* client/src/App.css */
+
+.App {
+    text-align: center;
+    padding: 20px; /* Add some padding to the app */
+    background-color: #e3f1f1; /* Light background color for the app */
+}
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+}
+
+.spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-left-color: #007bff; /* Color for the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+.header {
+    background-color: #759b9b; /* Dark background for the header */
+    padding: 10px 0; /* Padding for the header */
+}
+
+.header nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.header nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between items */
+}
+
+.header nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Adjust font size for links */
+}
+
+.header nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+h1 {
+    margin-bottom: 40px; /* Space between title and cards */
+    font-size: 2.5em; /* Adjust font size of the title */
+    color: #333; /* Title color */
+}
+
+/* Flex container for the cards */
+.cards-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 40px; /* Space below the cards */
+}
+
+/* Card styles */
+.card {
+    background-color: #d3d3d3; /* Light grey background for cards */
+    border: 1px solid #ccc; /* Optional: add border */
+    padding: 20px;
+    width: 300px; /* Fixed width for cards */
+    height: 150px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow effect */
+}
+
+/* Button container styles */
+.button-container {
+    display: flex; /* Use flexbox for button layout */
+    justify-content: space-between; /* Space buttons to left and right */
+    margin-top: 20px; /* Space between card title and buttons */
+}
+
+/* Button styles */
+button {
+    background-color: #759b9b; /* Default button color */
+    padding: 10px 20px; /* Adjust button padding */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded button corners */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth transition for hover effect */
+    flex: 1; /* Allow buttons to grow equally */
+    margin: 5px; /* Space between buttons */
+    margin-top: 40px;
+}
+
+/* Gradient background for buttons on hover */
+button:hover {
+    background: linear-gradient(45deg, #6a5acd, #00bfff); /* Gradient colors */
+}
+
+footer {
+    background-color: #3a3b3b; /* Dark footer background */
+    margin-top: 100px; /* Increased space above footer */
+    font-size: 1em; /* Font size for footer */
+    color: #adf2f5; /* Footer text color */
+    padding: 20px; /* Padding for footer */
+}
+.file-info {
+    margin-top: 10px; /* Space above file info */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between file name and delete button */
+    align-items: center; /* Center vertically */
+}
+
+.delete-button {
+    width: 50px;
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #d9534f; /* Delete button color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Adjust font size for delete button */
+}
+/* Modal styles */
+.modal {
+    display: flex; /* Center modal content */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    color: #e22923;
+    font-size: 20;
+    background-color: #f7e1e1;
+    margin: auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px; 
+    width: 40%; /* Could be more or less, depending on screen size */
+    text-align: center; /* Center the text */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "concurrently --names \"client,server,flask\" -c \"bgBlue.bold,bgGreen.bold,bgMagenta.bold\" \"npm run start-client\" \"npm run start-server\" \"npm run start-flask\"",
+    "start-client": "react-scripts start",
+    "start-server": "node \"C:/Users/AISSA BENSADIA/pdf-search-app/server/app.js\"",
+    "start-flask": "python \"C:/Users/AISSA BENSADIA/pdf-search-app/core/app.py\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
